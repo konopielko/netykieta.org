@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="path/to/fav.png">
+  <title>Netykieta.org</title>
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+  <style>.btn-primary{margin-top:4px;} svg{fill:rgba(0, 0, 0, 0.85);} .dark-mode svg{fill:rgba(255, 255, 255, 0.8);} .w-70{width:70px;}</style>
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="false">
+<div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-transitions" data-sidebar-type="default">
+        <div class="sticky-alerts"></div>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="#" class="navbar-brand ml-10">
+                <span class=" d-sm-flex">Netykieta.org</span>
+            </a>
+            <div class="navbar-content ml-auto">
+            <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()" aria-label="Toggle dark mode">
+                    <i class="fa fa-adjust" aria-hidden="true"></i>
+            </button>
+            </div>
+        </nav>
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <a href="#wstep" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    Wstęp
+                </a>
+                <div class="sidebar-divider"></div>
+                <a href="#profile" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                    </span>
+                    Profile Reklamowe
+                </a>
+                <a href="#przegladarka" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </span>
+                    Przeglądarka
+                </a>
+                <a href="#wyszukiwarka" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                    Wyszukiwarka
+                </a>
+                <a href="#hasla" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                    </span>
+                    Hasła
+                </a>
+                <a href="#czat" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </span>
+                    Komunikatory
+                </a>
+                <a href="#urzadzenia" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </span>
+                    Urządzenia
+                </a>
+                <a href="#email" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                    Email
+                </a>
+                <a href="#chmura" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-cloud" aria-hidden="true"></i>
+                    </span>
+                    Chmura
+                </a>
+                <a href="#phishing" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-user-secret" aria-hidden="true"></i>
+                    </span>
+                    Phishing
+                </a>
+                <a href="#mapy" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fa fa-map" aria-hidden="true"></i>
+                    </span>
+                    Mapy
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+            <div class="content">
+                    <div id="wstep">
+                        <h2 class="content-title">
+                            <i class="fa fa-home" aria-hidden="true"></i> Wstęp
+                        </h2>
+                        <p>
+                            Strona ma na celu w prosty sposób podanie sposobów na mądrzejsze i bardziej prywatne korzystanie z internetu. Jest to krótki, praktyczny przewodnik, który skupia się na przedstawieniu różnych narzędzi.
+                        </p>
+                        <p>
+                            Dla uproszczenia gdy mowa o szyfrowaniu to oznacza to szyfrowanie kompleksowe (zazwyczaj end-to-end). <a href="https://pl.wikipedia.org/wiki/Otwarte_oprogramowanie">Open-source</a> oznacza możliwość wglądu w kod programu.
+                        </p>
+                    </div>
+                    <div id="profile">
+                        <h2 class="content-title">
+                            <i class="fa fa-address-card" aria-hidden="true"></i> Profile Reklamowe
+                        </h2>
+                        <p>
+                            Strony internetowe, które utrzymują się z wyświetlania reklam bardzo często w celu optymalizacji pokazywanych treści zbierają wszelkie dane na temat osób, które z nich korzystają. Na podstawie tych danych wyświetlają użytkownikom treści, które algorytm uzna za pasujące do zainteresowań danej osoby, bardzo często wywołujące silne emocje, w celu zachęcenia użytkownika do dłuższego korzystania z serwisu lub zakupienia danego produktu. Wyniki wyszukiwania w Google mogą wyglądać zupełnie inaczej u różnych użytkowników, zależnie od poglądów, wieku, koloru skóry czy płci. Do tego dane zbierane są nie tylko na stronach tych dużych dostawców a również na wszystkich stronach na których np. znajduje sie przycisk "Lubię to!" czy skrypty Google. Według raportu wykonanego przez Cliqz i Ghostery w 2017 roku 77,4% stron internetowych zawiera skrypty śledzące, z czego 60,2% stron zawiera skrypty od Google i 27,1% od Facebooka.
+                        </p>
+                        <p>
+                            Jeśli posiadamy konto w jednym z tych dużych serwisów warto dostosować ustawienia prywatności, korzystając z ustawień:
+                        </p>
+                        <p>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-google fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Google
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wyłączyć <a href="https://adssettings.google.com/authenticated">personalizację reklam</a>.
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            W <a href="https://myactivity.google.com/">historii aktywności</a> wyłączyć Aktywność w internecie i aplikacjach. Następnie usunąć aktywność która już była.
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Jeśli korzysta się z Google Pay to dostosować <a href="https://pay.google.com/gp/w/home/settings">prywatność Google Pay</a>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-facebook fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Facebook
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wyłączyć <a href="https://www.facebook.com/off_facebook_activity/activity_list">aktywność poza Facebookiem</a>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wejść w <a href="https://www.facebook.com/adpreferences/ad_settings">Preferencje reklam</a>. Wyłączyć Dane dotyczące Twojej aktywności od partnerów. Wyłączyć Reklamy poza Facebookiem. Wyłączyć kategorie podstawowe w "Kategorie użyte w celu dotarcia do Ciebie", a następnie usunąć wszystko w "Kategorie zainteresowań" oraz w "Inne Kategorie".
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Niestety Facebook nawet po wyłączeniu wszystkich tych ustawień będzie tworzyć profile reklamowe na podstawie kolejnych zachowań na platformie.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                        </p>
+                    </div>
+                    <div id="przegladarka">
+                        <h2 class="content-title">
+                            <i class="fa fa-globe" aria-hidden="true"></i> Przeglądarka
+                        </h2>
+                        <p>
+                            Dla wielu osób przeglądarka internetowa to jedno z ważniejszych narzędzi podczas korzystania z komputera czy telefonu. Warto ją dobrze wybrać. Oto kilka sugestii:
+                        </p>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Firefox&nbsp;
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Międzyplatformowa przeglądarka tworzona przez organizację non-profit. Jest nastawiona na prywatność i na przejrzystość. Jedna z niewielu przeglądarek na Android umożliwiająca dodawanie wtyczek. Domyślnie blokuje obce cookies. Po instalacji sugerowane jest ustawić "ścisłą prywatność" w ustawieniach przeglądarki.
+                                                        </p>
+                                                        <a href="http://firefox.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Safari
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Przeglądarka internetowa dostępna obecnie jedynie na urządzenia Apple. Jest to jedyna przeglądarka na iOS umożliwiająca dodawanie wtyczek. W najnowszych wersjach domyślnie blokuje obce cookies.
+                                                        </p>
+                                                        <a href="https://pl.wikipedia.org/wiki/Safari_(przeglądarka)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Safari_(browser)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70px" viewBox="0 0 260.000000 260.000000" preserveAspectRatio="xMidYMid meet">
+                                                    <!--
+                                                        svg source:
+                                                        https://github.com/duckduckgo/duckduckhack.com/blob/master/images/favicons/safari-pinned-tab.svg?short_path=d25ef74
+                                                    -->
+                                                    <g transform="translate(0.000000,260.000000) scale(0.100000,-0.100000)" stroke="none">
+                                                    <path d="M1156 2590 c-309 -39 -561 -162 -776 -379 -156 -157 -249 -309 -314
+                                                    -511 -48 -148 -61 -233 -61 -400 0 -163 13 -251 57 -390 103 -325 339 -606
+                                                    638 -759 98 -50 239 -105 248 -97 2 3 -21 114 -51 248 -156 674 -247 1174
+                                                    -247 1340 1 172 74 290 222 362 l70 34 -106 7 c-58 4 -112 5 -121 1 -10 -3
+                                                    -15 0 -15 12 1 27 25 53 75 77 l46 22 -48 18 c-88 33 -75 37 97 33 149 -4 173
+                                                    -7 248 -33 46 -15 108 -45 138 -67 30 -21 83 -47 117 -59 123 -41 210 -112
+                                                    280 -230 62 -105 89 -204 95 -346 4 -105 7 -123 21 -123 9 0 90 23 181 51 176
+                                                    54 233 59 287 24 59 -39 33 -74 -111 -144 -204 -100 -377 -146 -510 -135 -105
+                                                    8 -156 -9 -156 -55 0 -47 9 -60 62 -87 92 -47 207 -48 432 -5 150 29 196 27
+                                                    196 -8 0 -24 -35 -54 -105 -89 -89 -45 -139 -56 -250 -55 -135 0 -271 29 -407
+                                                    88 -16 6 -18 0 -18 -53 0 -79 23 -199 60 -308 16 -49 30 -89 30 -89 0 0 -21 1
+                                                    -46 3 -27 3 -63 -3 -90 -13 l-45 -17 -83 36 c-102 43 -167 61 -191 52 -16 -6
+                                                    -17 -17 -12 -134 7 -132 25 -225 51 -250 19 -20 45 -12 141 43 68 39 84 44
+                                                    103 35 55 -25 154 -5 188 37 20 25 23 26 43 13 12 -8 44 -64 72 -125 27 -60
+                                                    51 -110 53 -112 1 -2 32 6 67 18 322 105 610 361 758 672 84 177 122 349 122
+                                                    557 0 149 -17 265 -57 391 -142 451 -530 795 -994 883 -100 19 -294 27 -384
+                                                    16z"/>
+                                                    <path d="M1480 1823 c-19 -7 -50 -34 -50 -43 0 -4 20 0 44 8 36 13 53 14 85 6
+                                                    48 -13 44 1 -5 22 -35 15 -49 16 -74 7z"/>
+                                                    <path d="M811 1773 c-17 -16 -32 -43 -36 -63 l-6 -35 22 33 c29 44 67 62 131
+                                                    63 l53 1 -35 13 c-57 22 -96 18 -129 -12z"/>
+                                                    <path d="M1515 1605 c-45 -44 -25 -117 35 -130 37 -8 76 14 91 52 29 76 -68
+                                                    136 -126 78z m103 -22 c5 -17 -26 -29 -40 -15 -6 6 -7 15 -3 22 9 14 37 9 43
+                                                    -7z"/>
+                                                    <path d="M925 1581 c-59 -25 -77 -101 -34 -147 32 -34 96 -34 129 1 36 38 33
+                                                    90 -8 126 -33 30 -52 34 -87 20z m85 -50 c0 -27 -19 -36 -37 -18 -18 18 -9 37
+                                                    18 37 12 0 19 -7 19 -19z"/>
+                                                    </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            DuckDuckGo Privacy Browser
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Przeglądarka internetowa dostępna tylko na urządzenia mobilne. Posiada wbudowane filtry prywatnościowe i filtry reklam. Domyślnie blokuje obce cookies. W łatwy sposób umożliwia czyszczenie cookies.
+                                                        </p>
+                                                        <a href="https://duckduckgo.com/app"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                            
+                        <p>
+                            Warto regularnie czyścić cookies (najczęściej poprzez czyszczenie historii przeglądarki) - dzięki cookies strony pamiętają o tym, co się na nich robiło. Warto z tego powodu rozważyć ciągłe korzystanie z trybu incognito w przeglądarkach - wtedy cookies czyszczone są za każdym razem, po zamknięciu przeglądarki.
+                        </p>
+                        <p>
+                            Często na stronach występują obce cookies czyli takie, które należą do innej firmy niż ta która prowadzi stronę. Warto je zablokować. Niektóre przeglądarki robią to domyślnie.
+                        </p>
+                        <p>
+                            Warto również zainstalować wtyczki do przeglądarek blokujące reklamy i inne zawartości nie potrzebne do korzystania z tych stron:
+                        </p>
+                        <p class="mt-0">
+                            <a href="https://ublockorigin.com"><button class="btn btn-primary" type="button"><i class="fab fa-firefox-browser" aria-hidden="true"></i> <i class="fa fa-chrome" aria-hidden="true"></i> Ublock Origin</button></a>
+                        	<a href="https://privacybadger.org"><button class="btn btn-primary" type="button"><i class="fab fa-firefox-browser" aria-hidden="true"></i> <i class="fa fa-chrome" aria-hidden="true"></i> Privacy Badger</button></a>
+                        </p>
+                       	<p class="mb-20">
+                        	<a href="https://adblockpro.app"><button class="btn btn-primary" type="button"><i class="fa fa-safari" aria-hidden="true"></i> Adblock Pro</button></a>
+                        </p>
+                    </div>
+                    <div id="wyszukiwarka">
+                        <h2 class="content-title">
+                            <i class="fa fa-search" aria-hidden="true"></i> Wyszukiwarka
+                        </h2>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70px" viewBox="0 0 260.000000 260.000000" preserveAspectRatio="xMidYMid meet">
+                                                    <!--
+                                                        svg source:
+                                                        https://github.com/duckduckgo/duckduckhack.com/blob/master/images/favicons/safari-pinned-tab.svg?short_path=d25ef74
+                                                    -->
+                                                    <g transform="translate(0.000000,260.000000) scale(0.100000,-0.100000)" stroke="none">
+                                                    <path d="M1156 2590 c-309 -39 -561 -162 -776 -379 -156 -157 -249 -309 -314
+                                                    -511 -48 -148 -61 -233 -61 -400 0 -163 13 -251 57 -390 103 -325 339 -606
+                                                    638 -759 98 -50 239 -105 248 -97 2 3 -21 114 -51 248 -156 674 -247 1174
+                                                    -247 1340 1 172 74 290 222 362 l70 34 -106 7 c-58 4 -112 5 -121 1 -10 -3
+                                                    -15 0 -15 12 1 27 25 53 75 77 l46 22 -48 18 c-88 33 -75 37 97 33 149 -4 173
+                                                    -7 248 -33 46 -15 108 -45 138 -67 30 -21 83 -47 117 -59 123 -41 210 -112
+                                                    280 -230 62 -105 89 -204 95 -346 4 -105 7 -123 21 -123 9 0 90 23 181 51 176
+                                                    54 233 59 287 24 59 -39 33 -74 -111 -144 -204 -100 -377 -146 -510 -135 -105
+                                                    8 -156 -9 -156 -55 0 -47 9 -60 62 -87 92 -47 207 -48 432 -5 150 29 196 27
+                                                    196 -8 0 -24 -35 -54 -105 -89 -89 -45 -139 -56 -250 -55 -135 0 -271 29 -407
+                                                    88 -16 6 -18 0 -18 -53 0 -79 23 -199 60 -308 16 -49 30 -89 30 -89 0 0 -21 1
+                                                    -46 3 -27 3 -63 -3 -90 -13 l-45 -17 -83 36 c-102 43 -167 61 -191 52 -16 -6
+                                                    -17 -17 -12 -134 7 -132 25 -225 51 -250 19 -20 45 -12 141 43 68 39 84 44
+                                                    103 35 55 -25 154 -5 188 37 20 25 23 26 43 13 12 -8 44 -64 72 -125 27 -60
+                                                    51 -110 53 -112 1 -2 32 6 67 18 322 105 610 361 758 672 84 177 122 349 122
+                                                    557 0 149 -17 265 -57 391 -142 451 -530 795 -994 883 -100 19 -294 27 -384
+                                                    16z"/>
+                                                    <path d="M1480 1823 c-19 -7 -50 -34 -50 -43 0 -4 20 0 44 8 36 13 53 14 85 6
+                                                    48 -13 44 1 -5 22 -35 15 -49 16 -74 7z"/>
+                                                    <path d="M811 1773 c-17 -16 -32 -43 -36 -63 l-6 -35 22 33 c29 44 67 62 131
+                                                    63 l53 1 -35 13 c-57 22 -96 18 -129 -12z"/>
+                                                    <path d="M1515 1605 c-45 -44 -25 -117 35 -130 37 -8 76 14 91 52 29 76 -68
+                                                    136 -126 78z m103 -22 c5 -17 -26 -29 -40 -15 -6 6 -7 15 -3 22 9 14 37 9 43
+                                                    -7z"/>
+                                                    <path d="M925 1581 c-59 -25 -77 -101 -34 -147 32 -34 96 -34 129 1 36 38 33
+                                                    90 -8 126 -33 30 -52 34 -87 20z m85 -50 c0 -27 -19 -36 -37 -18 -18 18 -9 37
+                                                    18 37 12 0 19 -7 19 -19z"/>
+                                                    </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            DuckDuckGo
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Nastawiona na prywatność wyszukiwarka internetowa. Zarabia z reklam które wyświetla jedynie na podstawie wyszukiwanej frazy. Nie tworzy profili reklamowych i wszystkim (zależnie od kraju) pokazuje te same rezultaty. Umożliwia proste wyszukiwanie w innych miejscach za pomocą !Bangs.
+                                                        </p>
+                                                        <a href="https://duck.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/DuckDuckGo"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/DuckDuckGo"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a href="https://duckduckgo.com/bang"><button class="btn btn-primary btn-sm" type="button">!Bangs</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-search fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Startpage
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wyszukiwarka internetowa wykorzystująca silnik Google obiecując przy tym utrzymanie prywatności. Często daje bardziej precyzyjne wyniki niż chociażby duckduckgo czy ecosia. Aby wyszukać za jej pomocą na DuckDuckGo należy dodać !s do wyszukiwanej frazy.
+                                                        </p>
+                                                        <a href="https://startpage.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Startpage.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-globe-africa fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Ecosia&nbsp;
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Ekologiczna i obiecująca prywatność wyszukiwarka internetowa. Większość jej zarobków z reklam idzie na rzecz organizacji charytatywnych które sadzą drzewa. Wykorzystuje silnik Bing. Nie tworzy profili reklamowych. Jeśli chce się ją wykorzystywać to dobrym pomysłem jest dodanie jej do wyjątków we wszystkich blockerach reklam żeby zarabiała.
+                                                        </p>
+                                                        <a href="https://ecosia.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Ecosia"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Ecosia"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                    </div>
+                    <div id="hasla">
+                        <h2 class="content-title">
+                            <i class="fa fa-key" aria-hidden="true"></i> Hasła
+                        </h2>
+                        <p>
+                            Posiadanie tego samego hasła do wielu kont to bardzo zły pomysł. Dlatego warto korzystać z menadżerów haseł - zapewniają one bezpieczeństwo, ponieważ pozwalają tworzyć losowe i skomplikowane hasła. Zapewniają też wygodę, ponieważ dzięki nim nie trzeba pamiętać wszystkich haseł.
+                        </p>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-key fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            KeePassXC&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Otwarty program umożliwiający przechowywanie haseł w formie zaszyfrowanego pliku. Dostępny na różnych platformach. Dobre rozwiązanie do lokalnego przechowywania haseł na komputerze. Najbezpieczniejsze, jednak najmniej wygodne, z przedstawianych rozwiązań
+                                                        </p>
+                                                        <a href="https://keepassxc.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/KeePassXC"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-shield fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Bitwarden&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Otwarty i szyfrowany menadżer haseł w chmurze. Dostępny na wielu platformach jako strona, aplikacja lub wtyczka do przeglądarek.
+                                                        </p>
+                                                        <a href="https://bitwarden.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Bitwarden"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Firefox Lockwise&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wbudowany w Firefox menadżer haseł. Aby hasła były szyfrowane należy utworzyć hasło główne. Po utworzeniu konta Firefox hasła są przechowywane w chmurze.
+                                                        </p>
+                                                        <a href="https://www.mozilla.org/pl/firefox/lockwise/"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Firefox_Lockwise"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            iCloud Keychain&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wbudowany w urządzenia Apple szyfrowany menadżer haseł. Domyślnie hasła przechowywane są w chmurze.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                        <p>
+                            W przypadku menadżerów haseł nie informujących o wyciekach haseł warto zapisać się na stronę o tym informującą:
+                        </p>
+                        <p>
+                            <a href="https://haveibeenpwned.com"><button class="btn btn-primary" type="button">Haveibeenpwned.com</button></a>
+                        </p>
+                    </div>
+                    <div id="czat">
+                        <h2 class="content-title">
+                            <i class="fa fa-comments" aria-hidden="true"></i> Komunikatory
+                        </h2>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="far fa-comment fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Signal&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Otwarty komunikator szyfrujący wszystkie wiadomości. Na Androidzie można używać ją jako domyślną aplikację SMS.
+                                                        </p>
+                                                        <a href="http://signal.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Signal_(komunikator_internetowy)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Signal_(software)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fas fa-comment fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            iMessage&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Dostępny tylko na urządzenia Apple, szyfrowany komunikator zawarty w aplikacji Wiadomości. Kiedy dymek jest zielony, oznacza to rozmowę za pomocą sms, a kiedy niebieski, za pomocą iMessage. Dymek zmienia się na niebieski automatycznie kiedy rozmówcy posiadają urządzenia Apple. 
+                                                        </p>
+                                                        <p class="m-0 mt-4 text-muted font-size-12">Backup wiadomości w iCloud jest szyfrowany. Backup całego urządzenia nie jest, należy wyłączyć backup w iCloud.
+                                                        </p>
+                                                        <a href="https://pl.wikipedia.org/wiki/IMessage"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/IMessage"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-5 w-70">
+                                                        <i class="fab fa-whatsapp fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Whatsapp&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowany komunikator Facebooka. Oparty na protokole Signal. Obecnie bezpłatny, zarabia na reklamach. Facebook zbiera informacje o kontaktach, oraz o tym z kim i jak często się komunikuje - nie widząc przy tym zawartości wiadomości.
+                                                        </p>
+                                                        <p class="m-0 mt-4 text-muted font-size-12">
+                                                            Backup wiadomości w iCloud oraz Google Drive nie jest szyfrowany. Należy wyłączyć backup aplikacji oraz backup urządzenia w dyskach.
+                                                        </p>
+                                                        <a href="https://whatsapp.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/WhatsApp"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/WhatsApp"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-sms fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            SMS
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">Zgodnie z artykułami 180a i 180c Prawa telekomunikacyjnego (na dzień 21.05.2020) wszelkie SMSy na terenie RP są przechowywane przez 12 miesięcy. Protokuł SMS nie jest szyfrowany.
+                                                        </p>
+                                                        <a href="https://pl.wikipedia.org/wiki/SMS"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/SMS"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-facebook-messenger fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            <i style="color:#ff4d4f" class="fa fa-exclamation-triangle"></i>
+                                                            Facebook Messenger
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Popularny w Polsce komunikator. Wiadomości nie są szyfrowane oraz ich okres przechowywania jest nieokreślony. Wiadomości są przechowywane przez Facebook nawet po usunięciu konta. Zawartość wiadomości może być wykorzystywana do wyświetlania reklam. Na ich podstawie budowane są profile reklamowe oraz mają wpływ na to co wyświetli się na stronie głównej Facebooka. Zdecydowanie nie polecany.
+                                                        </p>
+                                                        <a href="http://messenger.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Facebook_Messenger"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Facebook_Messenger"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                    </div>
+                    <div id="urzadzenia">
+                        <h2 class="content-title">
+                            <i class="fa fa-mobile" aria-hidden="true"></i> Urządzenia
+                        </h2>
+                        <p>
+                            Warto sprawdzać uprawnienia o które proszą aplikacje - często mogą je nadużywać. Kiedy aplikacje takie jak Facebook otrzymają uprawnienia do wiadomości czy do kontaktów bardzo chętnie wszyskie te informacje wykorzystują. Uprawnienia już przydzielone można odebrać w ustawieniach telefonu.
+                        </p>
+                        <p>
+                            Warto szyfrować urządzenie. Kiedy urządzenie nie jest zaszyfrowane to potencjalnie każdy kto fizycznie będzie miał dostęp do urządzenia może dostać się do danych (Nawet nie znając hasła do telefonu). Aplikacje często nie są szyfrowane lokalnie, nawet jeśli są szyfrowane w transferze, więc jest to szczególnie istotne w przypadku urządzeń mobilnych, które poruszają się razem z nami.
+                        </p>
+                            Szyfrowanie nie polecane w przypadku starszych urządzeń - może ono wpłynąć negatywnie na wydajność. Sugerowany jest również backup przed rozpoczęciem szyfrowania.
+                        </p>
+                        <p>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-apple fa-5x pl-15 w-70" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Apple
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Urządzenia firmy Apple są domyślnie szyfrowane.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center w-70">
+                                                        <i class="fab fa-android fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Android
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Ustawienia → Bezpieczeństwo → Szyfruj telefon
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-10 pr-5 w-70">
+                                                        <i class="fab fa-microsoft fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Windows
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowanie od Microsoft nie jest dostępne w wersji Home - tylko w wersjach Pro, Education i Enterprise lub na urządzeniach z modułem TPM. Nawet w wersji Home i bez modułu TPM można jednak zaszyfrować dysk - chociażby za pomocą VeraCrypt. Jest to jednak bardziej skomplikowane.
+                                                        </p>
+                                                        <a href="https://support.microsoft.com/pl-pl/windows/szyfrowanie-urządzeń-w-systemie-windows-10-ad5dcf4b-dbe0-2331-228f-7925c2a3012d"><button class="btn btn-primary btn-sm" type="button">Szyfrowanie Microsoft</button></a>
+                                                        <a href="https://www.veracrypt.fr/en/Home.html"><button class="btn btn-primary btn-sm" type="button">VeraCrypt</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                        </p>
+                    </div>
+                    <div id="email">
+                        <h2 class="content-title">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                        </h2>
+                        <p>
+                            Przy wybieraniu dostawcy email należy zwracać uwagę na to, żeby był to godny zaufania, duży dostawca (aby zabezpieczyć się przed wyciekami danych oraz zapewnić niezawodność). Warto również aby zawartość maili nie była wykorzystywana w celach reklamowych. Można też rozwaźyć szyfrowane skrzynki, jednak często poczta nie jest szyfrowana z drugiej strony, więc nie jest to decydujący element.
+                        </p>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-5 w-70">
+                                                        <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Protonmail&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowany szwajcarski email. W darmowej wersji można uzyskać alias @pm.me .
+                                                        </p>
+                                                        <a href="https://protonmail.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/ProtonMail"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/ProtonMail"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center w-70">
+                                                        <i class="fa fa-road fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Tutanota&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowany niemiecki email. W darmowej wersji nie można robić aliasów.
+                                                        </p>
+                                                        <a href="https://tutanota.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Tutanota"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Tutanota"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-cloud fa-4x pl-5 w-70" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            iCloud
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Email od Apple. Można otrzymać 3 aliasy.
+                                                        </p>
+                                                        <a href="https://icloud.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/iCloud"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/iCloud"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-10 pr-5 w-70">
+                                                        <i class="fab fa-microsoft fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Outlook
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Email od Microsoft. Można stworzyć 10 aliasów rocznie oraz używać adresów w formie adres+coś@outlook.com (gdzie coś można zastąpić czymkolwiek a adres jest standardowym adresem email)
+                                                        </p>
+                                                        <a href="https://outlook.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a href="https://pl.wikipedia.org/wiki/Outlook.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
+                                                        <a href="https://en.wikipedia.org/wiki/Outlook.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                        <p>
+                            Warto korzystać z aliasów ponieważ serwisy takie jak np. Facebook komunikują się z innymi stronami, na podstawie adresów email użytkowników. Jeśli dostawca email nie zapewnia wystarczającej liczby aliasów to bezpłatnie można wytworzyć wiele aliasów za pomocą Firefox Relay.
+                        </p>
+                        <p>
+                            <a href="https://relay.firefox.com/"><button class="btn btn-primary" type="button">Firefox Relay</button></a>
+                        </p>
+                    </div>
+                    <div id="chmura">
+                        <h2 class="content-title">
+                            <i class="fa fa-cloud" aria-hidden="true"></i> Chmura
+                        </h2>
+                        <p>
+                            Wszelkie poufne informacje powinny być przechowywane lokalnie, nie w chmurze. Najlepiej zdecydować się na dużego dostawcę czyli np. OneDrive, Dropbox, iCloud, Mega. Warto mieć włączoną weryfikację dwuetapową.
+                        </p>
+                    </div>
+                    <div id="phishing">
+                        <h2 class="content-title">
+                            <i class="fa fa-user-secret" aria-hidden="true"></i> Phishing
+                        </h2>
+                        <p>
+                            Aby zabezpieczyć się przed wyłudzeniami należy upewniać się kto jest nadawcą maila czy smsa. Szczególnie jeśli mail dotyczy jakiejś nagłej i istotnej sprawy warto zobaczyć cały adres mailowy nadawcy i upewnić się czy np. nie występuje w nim literówka. Nie należy również otwierać załączników i linków od nieznanych nadawców.
+                        </p>
+                        <p>
+                            Należy również bardzo uważać z podawaniem wrażliwych danych gdziekolwiek w internecie. Należy mieć zaufanie do każdej strony gdzie takie dane się podaje. Należy również upewnić się że jest się połączonym za pomocą HTTPS (sygnalizowane przez kłódkę przed adresem strony).
+                        </p>
+                    </div>
+                    <div id="mapy">
+                        <h2 class="content-title">
+                            <i class="fa fa-map" aria-hidden="true"></i> Mapy
+                        </h2>
+                        <p>Zgodnie z artykułami 180a i 180c Prawa telekomunikacyjnego (na dzień 21.05.2020) wszelkie dane o połączeniach wychodzących i przychodzących generowane w sieci telekomunikacyjnej na terenie RP są przechowywane przez 12 miesięcy. Z tego wynika, że kiedy jest się połączonym do internetu mobilnego, to informacje o lokalizacji są gromadzona przez operatora.</p>
+                        <p>W związku z tym istotne jest jedynie, aby dostawca map nie wykorzystywał informacji o lokalizacji w celach reklamowych. Niestety niewielu jest sensownych konkurentów Map Google, którzy oprócz nawigacji, zawierają również informacje o miejscach.</p>
+                        <p class="mt-0">
+                            <a href="https://myactivity.google.com/activitycontrols?settings=location"><button class="btn btn-primary" type="button">Ustawienia prywatności Map Google</button></a>
+                        </p>
+
+                    </div>
+            </div>
+            </div>
+        <nav class="navbar navbar-fixed-bottom">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/konopielko/netykieta.org" class="nav-link">
+                        <i class="fa fa-github mr-5" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                © Copyright 2020
+            </span>
+        </nav>
+    </div>
+
+    </div>
+  <script src="https://kit.fontawesome.com/273974bc65.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+</body>
+</html>
