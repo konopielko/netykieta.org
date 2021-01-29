@@ -8,7 +8,8 @@
   <link rel="icon" href="path/to/fav.png">
   <title>Netykieta.org</title>
   <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-  <style>.btn-primary{margin-top:4px;} svg{fill:rgba(0, 0, 0, 0.85);width:5em;} .dark-mode svg{fill:rgba(255, 255, 255, 0.8);} .m-10{width:5em;} .fa-whatsapp{width:1em;} </style>
+  <style>.btn-primary{margin-top:4px;} svg{fill:rgba(0, 0, 0, 0.85);width:5em;} .dark-mode svg{fill:rgba(255, 255, 255, 0.8);} .m-10{width:5em;} .fa-whatsapp{width:1em;}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}summary{outline:none;}.collapse-header::after{display:none;}.collapse-content .card{border:0;}.dark-mode .collapse-content{background-color: var(--dm-card-bg-color);}#przegladarka details summary{font-size: 1.6rem!important;}</style>
+
 </head>
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="false">
 <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-transitions" data-sidebar-type="default">
@@ -62,11 +63,11 @@
                     </span>
                     Hasła
                 </a>
-                <a href="#komunikatory" class="sidebar-link sidebar-link-with-icon">
+                <a href="#komunikator" class="sidebar-link sidebar-link-with-icon">
                     <span class="sidebar-icon">
                         <i class="fa fa-comments" aria-hidden="true"></i>
                     </span>
-                    Komunikatory
+                    Komunikator
                 </a>
                 <a href="#urzadzenia" class="sidebar-link sidebar-link-with-icon">
                     <span class="sidebar-icon">
@@ -176,7 +177,13 @@
                         <p>
                             Dla wielu osób przeglądarka internetowa to jedno z ważniejszych narzędzi podczas korzystania z komputera czy telefonu. Warto ją dobrze wybrać. Oto kilka sugestii:
                         </p>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+
+                     <details class="collapse-panel mw-full mb-10" id="sys_win"> 
+  						<summary class="collapse-header noselect">
+    						<i class="fa fa-windows" aria-hidden="true"></i> Windows
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -191,29 +198,55 @@
                                                             Międzyplatformowa przeglądarka tworzona przez organizację non-profit. Jest nastawiona na prywatność i na przejrzystość. Jedna z niewielu przeglądarek na Android umożliwiająca dodawanie wtyczek. Domyślnie blokuje obce cookies. Po instalacji sugerowane jest ustawić "ścisłą prywatność" w ustawieniach przeglądarki.
                                                         </p>
                                                         <a target="_blank" href="http://firefox.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
-                                                        <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
+                                                        <i class="fab fa-chrome fa-5x" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="flex-grow-1 d-flex align-items-center">
                                                     <div class="p-10">
                                                         <p class="m-0 font-weight-medium">
-                                                            Safari
+                                                            Brave&nbsp;
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Przeglądarka internetowa dostępna obecnie jedynie na urządzenia Apple. Jest to jedyna przeglądarka na iOS umożliwiająca dodawanie wtyczek. W najnowszych wersjach domyślnie blokuje obce cookies.
+                                                            Międzyplatformowa przeglądarka nastawiona na prywatność. Oparta na silniku Chromium. Domyślnie blokuje obce cookies. 
                                                         </p>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Safari_(przeglądarka)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Safari_(browser)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="http://brave.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Brave_(przeglądarka)"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+  						</div>
+  					</details>
+                     <details class="collapse-panel mw-full mb-10" id="sys_and"> 
+  						<summary class="collapse-header noselect">
+    						<i class="fa fa-android" aria-hidden="true"></i> Android
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Firefox&nbsp;
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Międzyplatformowa przeglądarka tworzona przez organizację non-profit. Jest nastawiona na prywatność i na przejrzystość. Jedna z niewielu przeglądarek na Android umożliwiająca dodawanie wtyczek. Domyślnie blokuje obce cookies. Po instalacji sugerowane jest ustawić "ścisłą prywatność" w ustawieniach przeglądarki.
+                                                        </p>
+                                                        <a target="_blank" href="http://firefox.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-5 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.000000 260.000000" preserveAspectRatio="xMidYMid meet">
                                                     <!--
                                                         svg source:
@@ -253,7 +286,8 @@
                                                 <div class="flex-grow-1 d-flex align-items-center">
                                                     <div class="p-10">
                                                         <p class="m-0 font-weight-medium">
-                                                            DuckDuckGo Privacy Browser
+                                                            DuckDuckGo Privacy Browser&nbsp;
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
                                                             Przeglądarka internetowa dostępna tylko na urządzenia mobilne. Posiada wbudowane filtry prywatnościowe i filtry reklam. Domyślnie blokuje obce cookies. W łatwy sposób umożliwia czyszczenie cookies.
@@ -262,6 +296,123 @@
                                                     </div>
                                                 </div>
                                         </div>
+  						</div>
+  					</details>
+                     <details class="collapse-panel mw-full mb-10" id="sys_ios"> 
+  						<summary class="collapse-header noselect">
+    						<i class="fa fa-apple" aria-hidden="true"></i> iOS
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Safari
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Przeglądarka internetowa dostępna obecnie jedynie na urządzenia Apple. Jest to jedyna przeglądarka na iOS umożliwiająca dodawanie wtyczek. W najnowszych wersjach domyślnie blokuje obce cookies.
+                                                        </p>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Safari_(przeglądarka)"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-5 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.000000 260.000000" preserveAspectRatio="xMidYMid meet">
+                                                    <!--
+                                                        svg source:
+                                                        https://github.com/duckduckgo/duckduckhack.com/blob/master/images/favicons/safari-pinned-tab.svg?short_path=d25ef74
+                                                    -->
+                                                    <g transform="translate(0.000000,260.000000) scale(0.100000,-0.100000)" stroke="none">
+                                                    <path d="M1156 2590 c-309 -39 -561 -162 -776 -379 -156 -157 -249 -309 -314
+                                                    -511 -48 -148 -61 -233 -61 -400 0 -163 13 -251 57 -390 103 -325 339 -606
+                                                    638 -759 98 -50 239 -105 248 -97 2 3 -21 114 -51 248 -156 674 -247 1174
+                                                    -247 1340 1 172 74 290 222 362 l70 34 -106 7 c-58 4 -112 5 -121 1 -10 -3
+                                                    -15 0 -15 12 1 27 25 53 75 77 l46 22 -48 18 c-88 33 -75 37 97 33 149 -4 173
+                                                    -7 248 -33 46 -15 108 -45 138 -67 30 -21 83 -47 117 -59 123 -41 210 -112
+                                                    280 -230 62 -105 89 -204 95 -346 4 -105 7 -123 21 -123 9 0 90 23 181 51 176
+                                                    54 233 59 287 24 59 -39 33 -74 -111 -144 -204 -100 -377 -146 -510 -135 -105
+                                                    8 -156 -9 -156 -55 0 -47 9 -60 62 -87 92 -47 207 -48 432 -5 150 29 196 27
+                                                    196 -8 0 -24 -35 -54 -105 -89 -89 -45 -139 -56 -250 -55 -135 0 -271 29 -407
+                                                    88 -16 6 -18 0 -18 -53 0 -79 23 -199 60 -308 16 -49 30 -89 30 -89 0 0 -21 1
+                                                    -46 3 -27 3 -63 -3 -90 -13 l-45 -17 -83 36 c-102 43 -167 61 -191 52 -16 -6
+                                                    -17 -17 -12 -134 7 -132 25 -225 51 -250 19 -20 45 -12 141 43 68 39 84 44
+                                                    103 35 55 -25 154 -5 188 37 20 25 23 26 43 13 12 -8 44 -64 72 -125 27 -60
+                                                    51 -110 53 -112 1 -2 32 6 67 18 322 105 610 361 758 672 84 177 122 349 122
+                                                    557 0 149 -17 265 -57 391 -142 451 -530 795 -994 883 -100 19 -294 27 -384
+                                                    16z"/>
+                                                    <path d="M1480 1823 c-19 -7 -50 -34 -50 -43 0 -4 20 0 44 8 36 13 53 14 85 6
+                                                    48 -13 44 1 -5 22 -35 15 -49 16 -74 7z"/>
+                                                    <path d="M811 1773 c-17 -16 -32 -43 -36 -63 l-6 -35 22 33 c29 44 67 62 131
+                                                    63 l53 1 -35 13 c-57 22 -96 18 -129 -12z"/>
+                                                    <path d="M1515 1605 c-45 -44 -25 -117 35 -130 37 -8 76 14 91 52 29 76 -68
+                                                    136 -126 78z m103 -22 c5 -17 -26 -29 -40 -15 -6 6 -7 15 -3 22 9 14 37 9 43
+                                                    -7z"/>
+                                                    <path d="M925 1581 c-59 -25 -77 -101 -34 -147 32 -34 96 -34 129 1 36 38 33
+                                                    90 -8 126 -33 30 -52 34 -87 20z m85 -50 c0 -27 -19 -36 -37 -18 -18 18 -9 37
+                                                    18 37 12 0 19 -7 19 -19z"/>
+                                                    </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            DuckDuckGo Privacy Browser&nbsp;
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Przeglądarka internetowa dostępna tylko na urządzenia mobilne. Posiada wbudowane filtry prywatnościowe i filtry reklam. Domyślnie blokuje obce cookies. W łatwy sposób umożliwia czyszczenie cookies.
+                                                        </p>
+                                                        <a target="_blank" href="https://duckduckgo.com/app"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+  						</div>
+  					</details>
+                     <details class="collapse-panel mw-full mb-10" id="sys_mac"> 
+  						<summary class="collapse-header noselect">
+    						<i class="fa fa-apple" aria-hidden="true"></i> macOS
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Firefox&nbsp;
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Międzyplatformowa przeglądarka tworzona przez organizację non-profit. Jest nastawiona na prywatność i na przejrzystość. Jedna z niewielu przeglądarek na Android umożliwiająca dodawanie wtyczek. Domyślnie blokuje obce cookies. Po instalacji sugerowane jest ustawić "ścisłą prywatność" w ustawieniach przeglądarki.
+                                                        </p>
+                                                        <a target="_blank" href="http://firefox.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Firefox"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-5 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Safari
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Przeglądarka internetowa dostępna obecnie jedynie na urządzenia Apple. Jest to jedyna przeglądarka na iOS umożliwiająca dodawanie wtyczek. W najnowszych wersjach domyślnie blokuje obce cookies.
+                                                        </p>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Safari_(przeglądarka)"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+  						</div>
+  					</details>
                             
                         <p>
                             Warto regularnie czyścić cookies (najczęściej poprzez czyszczenie historii przeglądarki) - dzięki cookies strony pamiętają o tym, co się na nich robiło. Warto z tego powodu rozważyć ciągłe korzystanie z trybu incognito w przeglądarkach - wtedy cookies czyszczone są za każdym razem, po zamknięciu przeglądarki.
@@ -328,16 +479,19 @@
                                                             DuckDuckGo
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Nastawiona na prywatność wyszukiwarka internetowa. Zarabia z reklam które wyświetla jedynie na podstawie wyszukiwanej frazy. Nie tworzy profili reklamowych i wszystkim (zależnie od kraju) pokazuje te same rezultaty. Umożliwia proste wyszukiwanie w innych miejscach za pomocą !Bangs.
+                                                            Nastawiona na prywatność wyszukiwarka internetowa. Zarabia z reklam które wyświetla jedynie na podstawie wyszukiwanej frazy. Nie tworzy profili reklamowych i wszystkim (zależnie od kraju) pokazuje te same rezultaty.
                                                         </p>
                                                         <a target="_blank" href="https://duck.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/DuckDuckGo"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/DuckDuckGo"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
-                                                        <a target="_blank" href="https://duckduckgo.com/bang"><button class="btn btn-primary btn-sm" type="button">!Bangs</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/DuckDuckGo"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                            <details class="collapse-panel mw-full mb-20">
+ 								<summary class="collapse-header noselect">
+    								Alternatywy
+  								</summary>
+								<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fa fa-search fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -350,12 +504,11 @@
                                                             Wyszukiwarka internetowa wykorzystująca silnik Google obiecując przy tym utrzymanie prywatności. Często daje bardziej precyzyjne wyniki niż chociażby duckduckgo czy ecosia. Aby wyszukać za jej pomocą na DuckDuckGo należy dodać !s do wyszukiwanej frazy.
                                                         </p>
                                                         <a target="_blank" href="https://startpage.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Startpage.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
+                                        <div class="mt-5 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-5">
                                                         <i class="fa fa-globe-africa fa-5x" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="flex-grow-1 d-flex align-items-center">
@@ -368,11 +521,12 @@
                                                             Ekologiczna i obiecująca prywatność wyszukiwarka internetowa. Większość jej zarobków z reklam idzie na rzecz organizacji charytatywnych które sadzą drzewa. Wykorzystuje silnik Bing. Nie tworzy profili reklamowych. Jeśli chce się ją wykorzystywać to dobrym pomysłem jest dodanie jej do wyjątków we wszystkich blockerach reklam żeby zarabiała.
                                                         </p>
                                                         <a target="_blank" href="https://ecosia.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Ecosia"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Ecosia"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Ecosia"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
+								</div>
+							</details>
                     </div>
                     <div id="hasla">
                         <h2 class="content-title">
@@ -381,26 +535,6 @@
                         <p>
                             Posiadanie tego samego hasła do wielu kont to bardzo zły pomysł. Dlatego warto korzystać z menadżerów haseł - zapewniają one bezpieczeństwo, ponieważ pozwalają tworzyć losowe i skomplikowane hasła. Zapewniają też wygodę, ponieważ dzięki nim nie trzeba pamiętać wszystkich haseł.
                         </p>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
-                                                        <i class="fa fa-key fa-5x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
-                                                        <p class="m-0 font-weight-medium">
-                                                            KeePassXC&nbsp;
-                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
-                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
-                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
-                                                        </p>
-                                                        <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Otwarty program umożliwiający przechowywanie haseł w formie zaszyfrowanego pliku. Dostępny na różnych platformach. Dobre rozwiązanie do lokalnego przechowywania haseł na komputerze. Najbezpieczniejsze, jednak najmniej wygodne, z przedstawianych rozwiązań
-                                                        </p>
-                                                        <a target="_blank" href="https://keepassxc.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/KeePassXC"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
-                                                    </div>
-                                                </div>
-                                        </div>
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fa fa-shield fa-5x" aria-hidden="true"></i>
@@ -416,30 +550,37 @@
                                                             Otwarty i szyfrowany menadżer haseł w chmurze. Dostępny na wielu platformach jako strona, aplikacja lub wtyczka do przeglądarek.
                                                         </p>
                                                         <a target="_blank" href="https://bitwarden.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Bitwarden"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Bitwarden"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                     <details class="collapse-panel mw-full"> 
+  						<summary class="collapse-header noselect">
+    						Alternatywy
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
-                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                        <i class="fa fa-key fa-5x" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="flex-grow-1 d-flex align-items-center">
                                                     <div class="p-10">
                                                         <p class="m-0 font-weight-medium">
-                                                            Firefox Lockwise&nbsp;
+                                                            KeePass&nbsp;
                                                             <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-dove"></i> Non-profit</span>
                                                             <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Wbudowany w Firefox menadżer haseł. Aby hasła były szyfrowane należy utworzyć hasło główne. Po utworzeniu konta Firefox hasła są przechowywane w chmurze.
+                                                            Otwarty program umożliwiający przechowywanie haseł w formie zaszyfrowanego pliku. Standardowa wersja dostępna jest na systemy windows jednak istnieją też wersje na inne systemy. Dobre rozwiązanie do lokalnego przechowywania haseł na komputerze. Najbezpieczniejsze, jednak najmniej wygodne, z przedstawianych rozwiązań
                                                         </p>
-                                                        <a target="_blank" href="https://www.mozilla.org/pl/firefox/lockwise/"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Firefox_Lockwise"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://keepass.info"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/KeePass_Password_Safe"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                        <div class="my-5 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fa fa-safari fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -455,6 +596,26 @@
                                                     </div>
                                                 </div>
                                         </div>
+                                        <div class="card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fab fa-firefox-browser fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Firefox Lockwise&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                            <span class="badge"><i class="fa fa-book-open"></i> Open-source</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Wbudowany w Firefox menadżer haseł. Aby hasła były szyfrowane należy utworzyć hasło główne. Po utworzeniu konta Firefox hasła są przechowywane w chmurze.
+                                                        </p>
+                                                        <a target="_blank" href="https://www.mozilla.org/pl/firefox/lockwise/"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+						</div>
+					</details>
                         <p>
                             W przypadku menadżerów haseł nie informujących o wyciekach haseł, warto zapisać się na stronę o tym informującą:
                         </p>
@@ -462,9 +623,9 @@
                             <a target="_blank" href="https://haveibeenpwned.com"><button class="btn btn-primary" type="button">Haveibeenpwned.com</button></a>
                         </p>
                     </div>
-                    <div id="komunikatory">
+                    <div id="komunikator">
                         <h2 class="content-title">
-                            <i class="fa fa-comments" aria-hidden="true"></i> Komunikatory
+                            <i class="fa fa-comments" aria-hidden="true"></i> Komunikator
                         </h2>
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
@@ -481,13 +642,18 @@
                                                         <p class="m-0 mt-5 text-muted font-size-12">
                                                             Otwarty komunikator szyfrujący wszystkie wiadomości. Na Androidzie można używać ją jako domyślną aplikację SMS.
                                                         </p>
-                                                        <a target="_blank" href="http://signal.org"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Signal_(komunikator_internetowy)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Signal_(software)"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="http://signal.org/pl"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Signal_(komunikator_internetowy)"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+
+                     <details class="collapse-panel mw-full mb-20"> 
+  						<summary class="collapse-header noselect">
+    						Alternatywy
+  						</summary>
+  						<div class="collapse-content p-5">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fas fa-comment fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -502,12 +668,11 @@
                                                         </p>
                                                         <p class="m-0 mt-4 text-muted font-size-12">Backup wiadomości w iCloud jest szyfrowany. Backup całego urządzenia nie jest, należy wyłączyć backup w iCloud.
                                                         </p>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/IMessage"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/IMessage"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/IMessage"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                        <div class="my-5 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center pl-5">
                                                         <i class="fab fa-whatsapp fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -524,12 +689,11 @@
                                                             Backup wiadomości w iCloud oraz Google Drive nie jest szyfrowany. Należy wyłączyć backup aplikacji oraz backup urządzenia w dyskach.
                                                         </p>
                                                         <a target="_blank" href="https://whatsapp.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/WhatsApp"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/WhatsApp"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/WhatsApp"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
+                                        <div class="card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fa fa-sms fa-5x" aria-hidden="true"></i>
                                                 </div>
@@ -540,11 +704,14 @@
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">Zgodnie z artykułami 180a i 180c Prawa telekomunikacyjnego (na dzień 21.05.2020) wszelkie SMSy na terenie RP są przechowywane przez 12 miesięcy. Protokuł SMS nie jest szyfrowany.
                                                         </p>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/SMS"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/SMS"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/SMS"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
+                                        </div>
+								</div>
+							</details>
+
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center">
                                                         <i class="fab fa-facebook-messenger fa-5x" aria-hidden="true"></i>
@@ -553,17 +720,13 @@
                                                     <div class="p-10">
                                                         <p class="m-0 font-weight-medium">
                                                             <i style="color:#ff4d4f" class="fa fa-exclamation-triangle"></i>
-                                                            Facebook Messenger
+                                                            Czemu nie korzystać z Facebook Messenger?
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Popularny w Polsce komunikator. Wiadomości nie są szyfrowane oraz ich okres przechowywania jest nieokreślony. Wiadomości są przechowywane przez Facebook nawet po usunięciu konta. Zawartość wiadomości może być wykorzystywana do wyświetlania reklam. Na ich podstawie budowane są profile reklamowe oraz mają wpływ na to co wyświetli się na stronie głównej Facebooka. Zdecydowanie nie polecany.
+                                                            Wiadomości nie są szyfrowane oraz ich okres przechowywania jest nieokreślony. Wiadomości są przechowywane przez Facebook nawet po usunięciu konta. Zawartość wiadomości może być wykorzystywana do wyświetlania reklam. Na ich podstawie budowane są profile reklamowe oraz mają wpływ na to co wyświetli się na stronie głównej Facebooka.
                                                         </p>
-                                                        <a target="_blank" href="http://messenger.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Facebook_Messenger"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Facebook_Messenger"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
                                                     </div>
                                                 </div>
-                                        </div>
                     </div>
                     <div id="urzadzenia">
                         <h2 class="content-title">
@@ -579,42 +742,31 @@
                         </p>
                         <p>
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
-                                                        <i class="fa fa-apple fa-5x pl-15" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
+                                                    <div class="p-15 pt-10">
                                                         <p class="m-0 font-weight-medium">
+                                                        <i class="fa fa-apple" aria-hidden="true"></i>
                                                             Apple
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
                                                             Urządzenia firmy Apple są domyślnie szyfrowane.
                                                         </p>
                                                     </div>
-                                                </div>
                                         </div>
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
-                                                        <i class="fab fa-android fa-5x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
+                                                    <div class="p-15 pt-10">
                                                         <p class="m-0 font-weight-medium">
+                                                        <i class="fab fa-android" aria-hidden="true"></i>
                                                             Android
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
                                                             Ustawienia → Bezpieczeństwo → Szyfruj telefon
                                                         </p>
                                                     </div>
-                                                </div>
                                         </div>
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center pl-10 pr-5">
-                                                        <i class="fab fa-microsoft fa-5x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
+                                                    <div class="p-15 pt-10">
                                                         <p class="m-0 font-weight-medium">
+                                                        <i class="fab fa-windows" aria-hidden="true"></i>
                                                             Windows
                                                         </p>
                                                         <p class="m-0 mt-5 text-muted font-size-12">
@@ -623,8 +775,7 @@
                                                         <a target="_blank" href="https://support.microsoft.com/pl-pl/windows/szyfrowanie-urządzeń-w-systemie-windows-10-ad5dcf4b-dbe0-2331-228f-7925c2a3012d"><button class="btn btn-primary btn-sm" type="button">Szyfrowanie Microsoft</button></a>
                                                         <a target="_blank" href="https://www.veracrypt.fr/en/Home.html"><button class="btn btn-primary btn-sm" type="button">VeraCrypt</button></a>
                                                     </div>
-                                                </div>
-                                        </div>
+                                    </div>
                         </p>
                     </div>
                     <div id="email">
@@ -634,62 +785,7 @@
                         <p>
                             Przy wybieraniu dostawcy email należy zwracać uwagę na to, żeby był to godny zaufania, duży dostawca (aby zabezpieczyć się przed wyciekami danych oraz zapewnić niezawodność). Warto również aby zawartość maili nie była wykorzystywana w celach reklamowych. Można też rozwaźyć szyfrowane skrzynki, jednak często poczta nie jest szyfrowana z drugiej strony, więc nie jest to decydujący element.
                         </p>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center pl-5">
-                                                        <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
-                                                        <p class="m-0 font-weight-medium">
-                                                            Protonmail&nbsp;
-                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
-                                                        </p>
-                                                        <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Szyfrowany szwajcarski email. W darmowej wersji można uzyskać alias @pm.me .
-                                                        </p>
-                                                        <a target="_blank" href="https://protonmail.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/ProtonMail"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/ProtonMail"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
-                                                        <i class="fa fa-road fa-5x" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
-                                                        <p class="m-0 font-weight-medium">
-                                                            Tutanota&nbsp;
-                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
-                                                        </p>
-                                                        <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Szyfrowany niemiecki email. W darmowej wersji nie można robić aliasów.
-                                                        </p>
-                                                        <a target="_blank" href="https://tutanota.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Tutanota"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Tutanota"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <div class="my-20 card mw-full m-0 p-0 d-flex">
-                                                <div class="m-10 align-self-center">
-                                                        <i class="fa fa-cloud fa-4x pl-5" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="flex-grow-1 d-flex align-items-center">
-                                                    <div class="p-10">
-                                                        <p class="m-0 font-weight-medium">
-                                                            iCloud
-                                                        </p>
-                                                        <p class="m-0 mt-5 text-muted font-size-12">
-                                                            Email od Apple. Można otrzymać 3 aliasy.
-                                                        </p>
-                                                        <a target="_blank" href="https://icloud.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/iCloud"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/iCloud"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
-                                                    </div>
-                                                </div>
-                                        </div>
+                                        
                                         <div class="my-20 card mw-full m-0 p-0 d-flex">
                                                 <div class="m-10 align-self-center pl-10 pr-5">
                                                         <i class="fab fa-microsoft fa-5x" aria-hidden="true"></i>
@@ -703,16 +799,63 @@
                                                             Email od Microsoft. Można stworzyć 10 aliasów rocznie oraz używać adresów w formie adres+coś@outlook.com (gdzie coś można zastąpić czymkolwiek a adres jest standardowym adresem email)
                                                         </p>
                                                         <a target="_blank" href="https://outlook.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
-                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Outlook.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>PL</sup></button></a>
-                                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Outlook.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia<sup>EN</sup></button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Outlook.com"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
                                                     </div>
                                                 </div>
                                         </div>
+
+                     <details class="collapse-panel mw-full mb-20"> 
+  						<summary class="collapse-header noselect">
+    						Alternatywy
+  						</summary>
+  						<div class="collapse-content p-5">
+  							<div class="card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center pl-5">
+                                                        <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Protonmail&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowany szwajcarski email. W darmowej wersji można uzyskać alias @pm.me .
+                                                        </p>
+                                                        <a target="_blank" href="https://protonmail.com/pl/"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/ProtonMail"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-5 card mw-full m-0 p-0 d-flex">
+                                                <div class="m-10 align-self-center">
+                                                        <i class="fa fa-road fa-5x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="flex-grow-1 d-flex align-items-center">
+                                                    <div class="p-10">
+                                                        <p class="m-0 font-weight-medium">
+                                                            Tutanota&nbsp;
+                                                            <span class="badge"><i class="fa fa-lock"></i> Szyfrowane</span>
+                                                        </p>
+                                                        <p class="m-0 mt-5 text-muted font-size-12">
+                                                            Szyfrowany niemiecki email. W darmowej wersji nie można robić aliasów.
+                                                        </p>
+                                                        <a target="_blank" href="https://tutanota.com"><button class="btn btn-primary btn-sm" type="button">Strona</button></a>
+                                                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Tutanota"><button class="btn btn-primary btn-sm" type="button">Wikipedia</button></a>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+  						</div>
+  					</details>
+
+
+
+
+
+
                         <p>
-                            Warto korzystać z aliasów ponieważ serwisy takie jak np. Facebook komunikują się z innymi stronami, na podstawie adresów email użytkowników. Jeśli dostawca email nie zapewnia wystarczającej liczby aliasów to bezpłatnie można wytworzyć wiele aliasów za pomocą Firefox Relay.
-                        </p>
-                        <p>
-                            <a target="_blank" href="https://relay.firefox.com/"><button class="btn btn-primary" type="button">Firefox Relay</button></a>
+                            Warto korzystać z aliasów ponieważ serwisy takie jak np. Facebook komunikują się z innymi stronami, na podstawie adresów email użytkowników.
                         </p>
                     </div>
                     <div id="chmura">
@@ -765,6 +908,23 @@
     </div>
   <script src="https://kit.fontawesome.com/273974bc65.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script>
+  var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+  if (macosPlatforms.indexOf(platform) !== -1) {
+var sys = document.getElementById('sys_mac');
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+var sys = document.getElementById('sys_ios');
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+var sys = document.getElementById('sys_win');
+  } else if (/Android/.test(userAgent)) {
+var sys = document.getElementById('sys_and');
+  }
+sys.open = 'true';
+  </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7b922b35ef5f47a389af1f8d841e86ee"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
